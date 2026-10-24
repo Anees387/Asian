@@ -3,36 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asian Store</title>
+  <meta name="description" content="Ideas Infinity — web development, graphic design, logo design, and brand identity that help businesses stand out.">
+  <meta name="theme-color" content="#080b18">
+  <title>Ideas Infinity — Design Beyond Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="#">🛒 Asian</a>
-    <nav><a href="#home">Home</a><a href="#products">Products</a><button class="cart-link" id="cart-button">Cart (<span id="cart-count">0</span>)</button></nav>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ideas Infinity home">
+      <span class="brand-mark"><span>i</span><b>∞</b></span>
+      <span class="brand-name">ideas<span>infinity</span></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a><a href="#work">Our work</a><a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div><p class="eyebrow">WELCOME TO ASIAN STORE</p><h1>Good products.<br><span>Better everyday.</span></h1><p>Simple shopping, right at your fingertips.</p><a class="button" href="#products">Shop now</a></div>
-      <div class="hero-emoji" aria-hidden="true">🛍️</div>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="availability"><span class="pulse"></span> CREATIVE DIGITAL STUDIO</div>
+        <h1>Big ideas.<br><span class="gradient-text">Infinite</span> possibilities.</h1>
+        <p class="hero-lead">We turn ambitious ideas into standout digital experiences — from modern websites to memorable logos and complete brand identities.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#contact">Start a project <span>↗</span></a><a class="button button-ghost" href="#work"><span class="play-icon">▶</span> Explore our work</a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>✦</span><span>✳</span><span>◈</span></div><div><strong>Creative thinking. Clean execution.</strong><small>Design · Development · Branding</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract 3D infinity-inspired artwork">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="orb orb-blue"></div><div class="orb orb-violet"></div>
+        <div class="infinity-object"><span class="loop loop-left"></span><span class="loop loop-right"></span><span class="infinity-glow"></span></div>
+        <div class="floating-card card-code"><span class="mini-dot"></span><span>Digital experiences</span><b>01 / 03</b></div>
+        <div class="floating-card card-brand"><div class="mini-brand">∞</div><div><b>Brand identity</b><small>Made to be remembered</small></div></div>
+        <div class="floating-card card-web"><span class="web-icon">⌘</span><div><b>Web design</b><small>Pixel-perfect by design</small></div></div>
+        <div class="visual-caption">IDEAS WITHOUT LIMITS <span>✳</span></div>
+      </div>
     </section>
 
-    <section class="section" id="products">
-      <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Featured products</h2></div><input id="search" type="search" placeholder="Search products..." aria-label="Search products"></div>
-      <div class="products" id="product-list"></div>
-      <p id="no-results" class="no-results" hidden>No products found. Try another search.</p>
+    <section class="ticker" aria-label="Our capabilities"><div class="ticker-track"><span>WEB DEVELOPMENT</span><i>✳</i><span>LOGO DESIGN</span><i>✳</i><span>BRAND IDENTITY</span><i>✳</i><span>GRAPHIC DESIGN</span><i>✳</i><span>UI / UX DESIGN</span><i>✳</i><span>WEB DEVELOPMENT</span><i>✳</i><span>LOGO DESIGN</span><i>✳</i><span>BRAND IDENTITY</span><i>✳</i><span>GRAPHIC DESIGN</span><i>✳</i></div></section>
+
+    <section class="services section-wrap" id="services">
+      <div class="section-heading"><div><span class="eyebrow">WHAT WE DO</span><h2>Creative services.<br><span class="muted-heading">Real-world impact.</span></h2></div><p>One creative partner for the digital presence, visuals, and brand system your business needs to grow.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-featured"><div class="service-top"><span class="service-number">01 / DIGITAL</span><span class="service-arrow">↗</span></div><div class="service-illustration browser-3d"><div class="browser-bar"><i></i><i></i><i></i></div><div class="browser-content"><div class="browser-lines"><b></b><b></b><b></b></div><div class="browser-cube">◆</div></div></div><h3>Web Development</h3><p>Responsive, fast, and modern websites designed to turn visitors into customers.</p><div class="tags"><span>Business websites</span><span>Landing pages</span><span>UI / UX</span></div></article>
+        <article class="service-card"><div class="service-top"><span class="service-number">02 / IDENTITY</span><span class="service-arrow">↗</span></div><div class="service-illustration logo-3d"><div class="logo-tile">∞<span>®</span></div><div class="logo-shadow"></div></div><h3>Logo & Brand Identity</h3><p>Distinctive logos, color systems, typography, and brand guidelines that make you recognizable.</p><div class="tags"><span>Logo design</span><span>Brand guides</span></div></article>
+        <article class="service-card"><div class="service-top"><span class="service-number">03 / VISUALS</span><span class="service-arrow">↗</span></div><div class="service-illustration graphic-3d"><div class="poster poster-back">CREATE<br>MORE.</div><div class="poster poster-front"><span>DESIGN<br>THE<br>FUTURE</span><i>✳</i></div></div><h3>Graphic Design</h3><p>Scroll-stopping visuals for campaigns, social media, marketing, and print.</p><div class="tags"><span>Social media</span><span>Marketing</span><span>Print</span></div></article>
+        <article class="service-card"><div class="service-top"><span class="service-number">04 / CONTENT</span><span class="service-arrow">↗</span></div><div class="service-illustration content-3d"><div class="content-window"><span>▶</span><div class="content-bars"><b></b><b></b><b></b></div></div><div class="content-badge">MAKE<br>IT MOVE ↗</div></div><h3>Creative Content</h3><p>Thumbnails, promotional creatives, and polished digital content built for attention.</p><div class="tags"><span>YouTube thumbnails</span><span>Ads</span><span>Promos</span></div></article>
+      </div>
     </section>
 
-    <section class="cart-section" id="cart">
-      <div class="section-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your cart</h2></div></div>
-      <div id="cart-items"></div>
-      <div class="cart-bottom"><strong>Total: <span id="cart-total">Rs 0</span></strong><button class="button" id="checkout-button">Place demo order</button></div>
-      <p class="note">Demo only: this website does not process payments or send orders to a store.</p>
+    <section class="work section-wrap" id="work">
+      <div class="section-heading"><div><span class="eyebrow">SELECTED CONCEPTS</span><h2>Ideas, brought <span class="gradient-text">to life.</span></h2></div><p>A glimpse of the visual direction we bring to brands. These are concept examples, not client case studies.</p></div>
+      <div class="work-grid">
+        <article class="work-card work-wide"><div class="work-art work-art-one"><div class="mock-site"><div class="mock-nav"><span>FORMA.</span><span>STUDIO&nbsp;&nbsp; SHOP&nbsp;&nbsp; ABOUT</span></div><div class="mock-headline">Shape your<br><em>everyday.</em></div><div class="mock-shape"></div><span class="mock-label">FORM / FUNCTION / FEELING</span></div></div><div class="work-meta"><div><h3>FORMA — Digital storefront</h3><p>Website concept · UI / UX</p></div><span class="round-arrow">↗</span></div></article>
+        <article class="work-card"><div class="work-art work-art-two"><div class="brand-poster"><small>YOUR NEXT CHAPTER</small><b>MAKE<br>IT<br><i>MATTER.</i></b><span>BRAND CAMPAIGN / 2026</span></div><div class="poster-orb"></div></div><div class="work-meta"><div><h3>Make It Matter</h3><p>Campaign concept · Graphic design</p></div><span class="round-arrow">↗</span></div></article>
+        <article class="work-card"><div class="work-art work-art-three"><div class="identity-card"><div class="identity-symbol">N.</div><div><b>NORTH / OBJECTS</b><small>OBJECTS FOR SLOW LIVING</small></div><span>EST. 2026</span></div><div class="identity-card identity-card-back">LESS,<br><em>BUT BETTER.</em></div></div><div class="work-meta"><div><h3>North Objects</h3><p>Brand identity concept · Logo</p></div><span class="round-arrow">↗</span></div></article>
+      </div>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div class="about-visual"><div class="about-ring"></div><div class="about-center">∞</div><span class="about-note note-top">THINK BIG</span><span class="about-note note-bottom">BUILD SMART</span><div class="about-sticker">IDEAS<br>INFINITE<br>BY DESIGN ✳</div></div>
+      <div class="about-copy"><span class="eyebrow">WHY IDEAS INFINITY</span><h2>We make good ideas<br><span class="gradient-text">impossible to ignore.</span></h2><p>Ideas Infinity is a creative digital studio focused on helping businesses look sharper, communicate clearly, and build a stronger online presence.</p><p>We combine thoughtful design with practical development — so your brand doesn't just look good, it works hard too.</p><div class="values"><div><span>✳</span><b>Purposeful creativity</b><small>Every detail has a reason.</small></div><div><span>⌘</span><b>Built for people</b><small>Clear, useful, easy to use.</small></div><div><span>↗</span><b>Always evolving</b><small>Ideas that grow with you.</small></div></div></div>
+    </section>
+
+    <section class="process section-wrap">
+      <div class="section-heading"><div><span class="eyebrow">THE PROCESS</span><h2>Simple steps.<br><span class="muted-heading">Thoughtful results.</span></h2></div><p>A clear process keeps your project moving from the first conversation to final delivery.</p></div>
+      <div class="process-grid"><div class="process-step"><span>01</span><h3>Discover</h3><p>We learn about your goals, audience, and what success means to you.</p></div><div class="process-step"><span>02</span><h3>Design</h3><p>We shape the direction, look, and experience around your brand.</p></div><div class="process-step"><span>03</span><h3>Build</h3><p>We turn the approved direction into polished, practical deliverables.</p></div><div class="process-step"><span>04</span><h3>Deliver</h3><p>We refine the details and hand over the finished work.</p></div></div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-panel"><div class="contact-orb"></div><div class="contact-copy"><span class="eyebrow">HAVE A PROJECT IN MIND?</span><h2>Let's make something<br><span class="gradient-text">meaningful.</span></h2><p>Tell us what you're building. We'll help turn the idea into a clear next step.</p></div><form id="contact-form" class="contact-form"><label>Your name<input id="name" name="name" required placeholder="Name"></label><label>Email address<input id="email" name="email" type="email" required placeholder="you@example.com"></label><label>What do you need?<select id="service" name="service"><option>Website development</option><option>Logo & brand identity</option><option>Graphic design</option><option>Creative content</option><option>Something else</option></select></label><label>Project details<textarea id="message" name="message" required rows="3" placeholder="A little about your project..."></textarea></label><button class="button button-primary button-submit" type="submit">Prepare inquiry <span>↗</span></button><p class="form-note" id="form-note">This opens your email app with the inquiry prepared. Add your business email in script.js before publishing.</p></form></div>
     </section>
   </main>
 
-  <footer><strong>🛒 Asian Store</strong><span>Basic demo store made with HTML, CSS and JavaScript.</span></footer>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark"><span>i</span><b>∞</b></span><span class="brand-name">ideas<span>infinity</span></span></a><span>Creative thinking. Infinite possibilities.</span><div class="footer-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> Ideas Infinity. All rights reserved.</small></footer>
   <script src="script.js"></script>
 </body>
 </html>
