@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asian Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#">🛒 Asian</a>
+    <nav><a href="#home">Home</a><a href="#products">Products</a><button class="cart-link" id="cart-button">Cart (<span id="cart-count">0</span>)</button></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div><p class="eyebrow">WELCOME TO ASIAN STORE</p><h1>Good products.<br><span>Better everyday.</span></h1><p>Simple shopping, right at your fingertips.</p><a class="button" href="#products">Shop now</a></div>
+      <div class="hero-emoji" aria-hidden="true">🛍️</div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>Featured products</h2></div><input id="search" type="search" placeholder="Search products..." aria-label="Search products"></div>
+      <div class="products" id="product-list"></div>
+      <p id="no-results" class="no-results" hidden>No products found. Try another search.</p>
+    </section>
+
+    <section class="cart-section" id="cart">
+      <div class="section-heading"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your cart</h2></div></div>
+      <div id="cart-items"></div>
+      <div class="cart-bottom"><strong>Total: <span id="cart-total">Rs 0</span></strong><button class="button" id="checkout-button">Place demo order</button></div>
+      <p class="note">Demo only: this website does not process payments or send orders to a store.</p>
+    </section>
+  </main>
+
+  <footer><strong>🛒 Asian Store</strong><span>Basic demo store made with HTML, CSS and JavaScript.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
